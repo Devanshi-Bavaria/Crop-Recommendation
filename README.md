@@ -19,12 +19,6 @@ https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset
 - **Machine Learning Model:**
   - Utilizes a Random Forest Classifier trained on a dataset of crop conditions and yields.
 
-- **User-Friendly Interface:**
-  - A sleek, black-themed web interface built using HTML, CSS, and JavaScript, allowing users to input data easily.
-
-- **Real-Time Predictions:**
-  - Provides immediate crop recommendations based on user input.
-
 - **Model Accuracy:**
   - The system has been evaluated for accuracy and reliability, achieving an accuracy rate of 99.54%.
 
@@ -36,4 +30,8 @@ https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset
 - **Backend:**
   - Machine learning model developed using Python.
  
-![image](https://github.com/user-attachments/assets/f06a5e18-05b4-4344-b0d8-bb4afadb7ccb)
+- **Deployment:**
+   - Flask is used to develop Web App along with HTML, CSS and JS.
+ 
+  ![image](https://github.com/user-attachments/assets/c2376203-c330-42db-ae5f-3cea9a877492)
+
