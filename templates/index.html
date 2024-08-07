@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Crop Recommendation System</h1>
+        <form id="cropForm">
+            <div class="form-group">
+                <label for="nitrogen">Nitrogen (N):</label>
+                <input type="number" id="nitrogen" name="nitrogen" required>
+            </div>
+            <div class="form-group">
+                <label for="phosphorus">Phosphorus (P):</label>
+                <input type="number" id="phosphorus" name="phosphorus" required>
+            </div>
+            <div class="form-group">
+                <label for="potassium">Potassium (K):</label>
+                <input type="number" id="potassium" name="potassium" required>
+            </div>
+            <div class="form-group">
+                <label for="temperature">Temperature (°C):</label>
+                <input type="number" id="temperature" name="temperature" required>
+            </div>
+            <div class="form-group">
+                <label for="humidity">Humidity (%):</label>
+                <input type="number" id="humidity" name="humidity" required>
+            </div>
+            <div class="form-group">
+                <label for="ph">pH Level:</label>
+                <input type="number" id="ph" name="ph" required>
+            </div>
+            <div class="form-group">
+                <label for="rainfall">Rainfall (mm):</label>
+                <input type="number" id="rainfall" name="rainfall" required>
+            </div>
+            <button type="submit">Predict Crop</button>
+        </form>
+        <div id="result"></div>
+        <footer>Made by Devanshi Bavaria</footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
