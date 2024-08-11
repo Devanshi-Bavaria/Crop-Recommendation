@@ -12,13 +12,14 @@ with open('model.pickle', 'rb') as f:
 def home():
     return render_template("index.html")
 
-@app.route("/predict", methods=["POST"])
-def predict():
+@app.route("/p", methods=["POST"])
+def p():
     # Get the form data as a list of floats
     float_features = [float(x) for x in request.form.values()]
     features = [np.array(float_features)]
     prediction = model.predict(features)
-    return f"The Predicted Crop is {prediction[0]}"
+    return render_template("index.html",prediction_text="The Predicted Crop is {}.".format(prediction[0]))
+    
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
