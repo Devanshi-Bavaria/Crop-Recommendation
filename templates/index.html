@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Crop Recommendation System</h1>
-        <form id="cropForm">
+        <form id="cropForm" action="/p" method="post">
             <div class="form-group">
                 <label for="nitrogen">Nitrogen (N):</label>
                 <input type="number" id="nitrogen" name="nitrogen" required>
@@ -40,10 +40,10 @@
             </div>
             <button type="submit">Predict Crop</button>
         </form>
-        <div id="result"></div>
+        <div id="result">{{prediction_text}}</div>
         <footer>Made by Devanshi Bavaria</footer>
     </div>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
 </body>
 </html>
